@@ -2,7 +2,7 @@
 <header class="top"><div class="wrap"><a class="brand" href="index.html"><img src="icon.png" alt="Logo Kho Lạnh">Kho Lạnh</a><nav><a href="index.html">Giới thiệu</a><a href="privacy.html">Chính sách quyền riêng tư</a><a href="terms.html">Điều khoản sử dụng</a></nav></div></header>
 <main class="wrap">
 <h1>Chính sách quyền riêng tư</h1>
-<p class="meta">Ứng dụng: <b>Kho Lạnh</b> (bản máy tính Windows và bản điện thoại) · Cập nhật lần cuối: 27/10/2026</p>
+<p class="meta">Ứng dụng: <b>Kho Lạnh</b> (bản máy tính Windows và bản điện thoại) · Cập nhật lần cuối: 24/11/2026</p>
 <p>Chính sách này giải thích Kho Lạnh truy cập và sử dụng dữ liệu nào, đặc biệt khi người dùng chọn liên kết tài khoản Google. Kho Lạnh là ứng dụng <b>dùng nội bộ cho đội nhóm và cá nhân, không thương mại hóa</b> (miễn phí, không bán, không quảng cáo), chạy trên thiết bị của bạn; nhà phát triển <b>không vận hành máy chủ thu thập dữ liệu kho của bạn</b>.</p>
 
 <h2>1. Dữ liệu ứng dụng thu thập hoặc truy cập</h2>
@@ -13,6 +13,10 @@
 <tr><td>Địa chỉ email của tài khoản Google (quyền <code>openid</code>, <code>email</code>)</td><td>Chỉ để hiển thị cho bạn biết đang liên kết với Gmail nào.</td></tr>
 <tr><td>Các file và thư mục do <b>chính Kho Lạnh tạo</b> trên Drive (quyền <code>drive.file</code>)</td><td>Sao lưu và khôi phục file dữ liệu của ứng dụng.</td></tr></table>
 <p>Kho Lạnh <b>không</b> đọc, liệt kê hay sửa các file khác trong Google Drive của bạn, <b>không</b> truy cập danh bạ, lịch, ảnh hay Gmail thông qua Google OAuth.</p>
+<h3>b2) Đăng nhập bằng Google (chỉ khi bạn chọn)</h3>
+<table><tr><th>Dữ liệu</th><th>Mục đích</th></tr>
+<tr><td>Địa chỉ email và tên hiển thị của tài khoản Google (quyền <code>openid</code>, <code>email</code>, <code>profile</code>)</td><td>Đăng nhập ứng dụng: so email với danh sách tài khoản do Quản trị của tổ chức bạn gán sẵn (ô "Email Google"); email trùng với tài khoản đang dùng thì được vào với đúng quyền của tài khoản đó, email lạ bị từ chối.</td></tr></table>
+<p>Đăng nhập bằng Google không xin quyền Drive, Gmail hay bất kỳ dữ liệu nào khác. Ứng dụng <b>không</b> lưu mã truy cập (access / refresh token) của lần đăng nhập này: chỉ đọc email đã được Google xác minh rồi bỏ đi. Mật khẩu Google do Google xử lý, ứng dụng không nhìn thấy. Bản máy tính mở trình duyệt mặc định để bạn chọn tài khoản (OAuth 2.0 cho ứng dụng máy tính, có PKCE); bản điện thoại trên trình duyệt dùng nút "Sign in with Google" của Google, mã đăng nhập được Apps Script do tổ chức bạn sở hữu kiểm tra với Google trước khi cho vào. Email được gán nằm trong danh sách tài khoản của tổ chức bạn (máy tính / Google Sheet do tổ chức bạn tạo), nhà phát triển không có quyền truy cập.</p>
 <h3>c) Hộp thư Gmail (tính năng tuỳ chọn)</h3>
 <p>Nếu bạn dùng Hộp thư trong ứng dụng, kết nối được thực hiện trực tiếp từ máy bạn tới Gmail bằng giao thức IMAP/SMTP với <b>mật khẩu ứng dụng</b> do bạn tự tạo (không dùng Google OAuth). Thư chỉ được đọc để hiển thị và nhận diện thư xuất hàng trong ứng dụng, không gửi cho nhà phát triển.</p>
 <h3>d) Đồng bộ điện thoại</h3>
@@ -47,6 +51,7 @@
 <li><b>Trong ứng dụng:</b> vào phần <i>Drive cá nhân</i> và bấm <b>Huỷ liên kết</b>; ứng dụng sẽ ngừng truy cập Drive.</li>
 <li><b>Trong tài khoản Google:</b> mở <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> → chọn Kho Lạnh → <b>Xoá quyền truy cập</b>. Có hiệu lực ngay.</li>
 <li><b>Xoá bản sao lưu:</b> vào Google Drive của bạn và xoá thư mục <code>KhoLanh_AnAn</code>.</li>
+<li><b>Ngừng đăng nhập bằng Google:</b> nhờ Quản trị xoá email ở ô "Email Google" của tài khoản (Hệ thống › Tài khoản trên máy tính, hoặc Cài đặt › Quản lý người dùng trên điện thoại).</li>
 <li><b>Xoá dữ liệu trên máy:</b> gỡ cài đặt ứng dụng và xoá thư mục dữ liệu.</li>
 </ol>
 <p>Vì nhà phát triển không lưu dữ liệu của bạn trên máy chủ riêng, việc xoá như trên là đủ để xoá toàn bộ dữ liệu liên quan.</p>
@@ -57,6 +62,6 @@
 <p>Trương Nhật Đăng Khoa · Email: <a href="mailto:truongnhatdangkhoa@gmail.com">truongnhatdangkhoa@gmail.com</a></p>
 
 <h2>English summary</h2>
-<p>Kho Lạnh is a non-commercial, free cold-storage management app (Windows desktop + mobile) built for personal and small-team internal use; it has no ads and no paid features. Business data stays on the user's device as Excel files. If the user chooses to link Google Drive, the app requests only <code>drive.file</code>, <code>openid</code> and <code>email</code>; it uploads backup copies of its own data files to a folder it creates (<code>KhoLanh_AnAn</code>) in the user's own Drive, and uses the email solely to show which account is linked. Refresh tokens are encrypted with the OS (Electron safeStorage / DPAPI). Data is never sold, shared, used for ads, or used to train AI models. Users can unlink in the app, revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, and delete the backup folder at any time. Contact: <a href="mailto:truongnhatdangkhoa@gmail.com">truongnhatdangkhoa@gmail.com</a>.</p>
+<p>Kho Lạnh is a non-commercial, free cold-storage management app (Windows desktop + mobile) built for personal and small-team internal use; it has no ads and no paid features. Business data stays on the user's device as Excel files. If the user chooses to link Google Drive, the app requests only <code>drive.file</code>, <code>openid</code> and <code>email</code>; it uploads backup copies of its own data files to a folder it creates (<code>KhoLanh_AnAn</code>) in the user's own Drive, and uses the email solely to show which account is linked. Optional "Sign in with Google" requests only <code>openid</code>, <code>email</code> and <code>profile</code>: the verified email is matched against the account list set up by the user's own organization administrator to sign the user in; no Google tokens from sign-in are stored and no other Google data is accessed. Refresh tokens are encrypted with the OS (Electron safeStorage / DPAPI). Data is never sold, shared, used for ads, or used to train AI models. Users can unlink in the app, revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, and delete the backup folder at any time. Contact: <a href="mailto:truongnhatdangkhoa@gmail.com">truongnhatdangkhoa@gmail.com</a>.</p>
 </main>
 <footer><div class="wrap"><a href="index.html">Trang chủ</a><a href="privacy.html">Chính sách quyền riêng tư</a><a href="terms.html">Điều khoản sử dụng</a><p>© 2026 Trương Nhật Đăng Khoa · <a href="mailto:truongnhatdangkhoa@gmail.com">truongnhatdangkhoa@gmail.com</a></p></div></footer></body></html>
